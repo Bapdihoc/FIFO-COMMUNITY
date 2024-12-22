@@ -5,7 +5,8 @@ import WarningSvg from '/public/warning.svg';
 import QuestionMarkSvg from '/public/question-mark.svg';
 import OpenBookSvg from '/public/open-book.svg';
 import RewardSvg from '/public/reward.svg';
-import FeedbackSvg from '/public/feedback.svg';
+import ReportSvg from '/public/report.svg';
+import RSvg from '/public/feedback.svg';
 import { useNavigate } from 'react-router-dom';
 import { PATHS } from '@/utils/paths';
 import { useSelector } from 'react-redux';
@@ -81,7 +82,7 @@ export const ResourceMenu = () => {
             ? [
                   {
                       key: '6',
-                      icon: <Icon component={() => <img src={FeedbackSvg} alt="feedback" />} />,
+                      icon: <Icon component={() => <img src={ReportSvg} alt="report />} />,
                       label: 'Report',
                       onClick: toReport,
                   },
